@@ -1,0 +1,191 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #002b4d;
+  color: white;
+  padding: 10px 0;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  background-image: url('https://cdn.www.gob.pe/uploads/document/file/2915471/1%20%284%29.jpg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 120px 20px;
+  color: white;
+  text-align: center;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.4);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.seccion {
+  padding: 50px 20px;
+}
+
+.fondo-azul {
+  background-color: #e3f0ff;
+}
+
+.fondo-claro {
+  background-color: #f9f9f9;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.productos-lista {
+  columns: 2;
+  padding-left: 20px;
+}
+
+.marca-carousel img {
+  max-width: 100px;
+  margin: 10px;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.question {
+  font-weight: bold;
+  color: #002b4d;
+}
+
+.answer {
+  margin-left: 15px;
+}
+
+#contacto a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+#contacto a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #333;
+}
+
+/* Título con icono para Nosotros */
+.titulo-con-icono {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.titulo-con-icono img {
+  width: 40px;
+  height: auto;
+}
+
+/* Fondo con imagen para Productos */
+.productos-fondo {
+  background-image: url('https://aysa.pe/wp-content/uploads/2022/09/aysa-ferreteria.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+.productos-contenido-fondo {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.productos-fondo h2,
+.productos-fondo ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Fondo para Preguntas Frecuentes */
+.fondo-faq {
+  background-image: url('https://png.pngtree.com/background/20210710/original/pngtree-modern-agriculture-cartoon-peasant-agriculture-development-poster-background-material-picture-image_1005372.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+.faq-contenido-fondo {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.fondo-faq .question {
+  color: #ffd700;
+}
+
+.fondo-faq .answer {
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 0;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .productos-lista {
+    columns: 1;
+  }
+
+  .marca-carousel img {
+    max-width: 80px;
+  }
+}
