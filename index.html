@@ -1,119 +1,133 @@
-<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ferretería Amor Pañaquito</title>
+  <title>Ferretería Pañaquito Pro</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<header>
-  <div class="container header-inner">
-    <div class="logo">Amor Pañaquito</div>
-    <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">☰</button>
-    <nav>
-      <ul id="nav-list">
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#nosotros">Nosotros</a></li>
-        <li><a href="#productos">Productos</a></li>
-        <li><a href="#marcas">Marcas</a></li>
-        <li><a href="#faq">FAQ</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-<section id="inicio" class="hero">
-  <div class="container">
-    <h1>Ferretería Amor Pañaquito</h1>
-    <p>Todo lo que necesitas para tu hogar, construcción y agricultura.</p>
-  </div>
-</section>
-
-<section id="nosotros" class="seccion">
-  <div class="container">
-    <h2 class="titulo-con-icono">
-      <img src="https://cdn-icons-png.flaticon.com/512/4906/4906519.png" alt="Icono Sobre Nosotros">
-      Sobre Nosotros
-    </h2>
-    <p>
-      Somos una ferretería con más de 10 años de experiencia, ofreciendo artículos para construcción, hogar y campo. ¡Calidad y atención garantizadas!
-    </p>
-  </div>
-</section>
-
-<section id="productos" class="seccion productos-fondo">
-  <div class="container">
-    <h2>Productos</h2>
-    <ul class="productos-lista">
-      <li>Martillos</li><li>Clavos</li><li>Calaminas</li><li>Ollas</li>
-      <li>Catres</li><li>Colchas</li><li>Frazadas</li>
-      <li>Pinturas</li><li>Brochas</li><li>Destornilladores</li>
-      <li>Cierres</li><li>Cables</li><li>Baldes</li><li>Mangueras</li>
-      <li>Palas</li><li>Picos</li><li>Carretillas</li>
-      <li>Herramientas agrícolas</li><li>Cercos para ovejas</li>
-    </ul>
-  </div>
-</section>
-
-<section id="marcas" class="seccion">
-  <div class="container">
-    <h2>Marcas que Trabajamos</h2>
-    <div class="marca-carousel">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Truper_logo.svg/2560px-Truper_logo.svg.png" alt="Marca 1">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Stanley_Hand_Tools_logo.svg/2560px-Stanley_Hand_Tools_logo.svg.png" alt="Marca 2">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Bosch-logo.svg/2560px-Bosch-logo.svg.png" alt="Marca 3">
+  <header class="header">
+    <div class="container">
+      <div class="logo">🔧 Pañaquito Pro</div>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#catalogo">Catálogo</a></li>
+          <li><a href="#beneficios">¿Por qué elegirnos?</a></li>
+          <li><a href="#testimonios">Opiniones</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
     </div>
-  </div>
-</section>
+  </header>
 
-<section id="faq" class="seccion fondo-faq">
-  <div class="container">
-    <h2>Preguntas Frecuentes</h2>
-    <div class="faq-item">
-      <p class="question">¿Venden herramientas agrícolas?</p>
-      <p class="answer">Sí, contamos con palas, picos, carretillas, mallas y más.</p>
+  <section id="inicio" class="hero">
+    <div class="container">
+      <h1>Tu Ferretería Moderna y de Confianza</h1>
+      <p>Equipamos tu obra, hogar o campo con calidad y eficiencia</p>
+      <a href="#contacto" class="btn-cta">Contáctanos</a>
     </div>
-    <div class="faq-item">
-      <p class="question">¿Tienen cercos para animales?</p>
-      <p class="answer">Sí, vendemos cercos y mallas ideales para ovejas.</p>
+  </section>
+
+  <section id="servicios" class="servicios">
+    <div class="container">
+      <h2>¿Qué ofrecemos?</h2>
+      <div class="cards">
+        <div class="card">
+          <img src="https://cdn-icons-png.flaticon.com/512/69/69881.png" alt="Herramientas">
+          <h3>Herramientas</h3>
+          <p>Desde destornilladores hasta carretillas.</p>
+        </div>
+        <div class="card">
+          <img src="https://cdn-icons-png.flaticon.com/512/3132/3132693.png" alt="Construcción">
+          <h3>Materiales</h3>
+          <p>Clavos, maderas, pintura, calaminas y más.</p>
+        </div>
+        <div class="card">
+          <img src="https://cdn-icons-png.flaticon.com/512/3669/3669989.png" alt="Campo">
+          <h3>Agro</h3>
+          <p>Equipos y cercos para tu campo y animales.</p>
+        </div>
+      </div>
     </div>
-    <div class="faq-item">
-      <p class="question">¿Hacen envíos?</p>
-      <p class="answer">Sí, realizamos envíos dentro de Lima y provincias.</p>
+  </section>
+
+  <section id="catalogo" class="catalogo">
+    <div class="container">
+      <h2>Catálogo Destacado</h2>
+      <div class="productos">
+        <div class="producto">🔨 Martillos reforzados</div>
+        <div class="producto">🪛 Juegos de destornilladores</div>
+        <div class="producto">🪚 Sierras y serruchos</div>
+        <div class="producto">🧱 Calaminas galvanizadas</div>
+        <div class="producto">💡 Focos y cables</div>
+        <div class="producto">🪣 Baldes resistentes</div>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="contacto" class="seccion">
-  <div class="container">
-    <h2>Contacto</h2>
-    <p><strong>Atencio Ramirez Valentín</strong></p>
-    <p>Teléfono: <a href="tel:+51937763833">937 763 833</a></p>
-    <p>Dirección: Jr. Principal S/N, Pañaccocha</p>
-    <p>¡Te esperamos con los mejores productos y atención personalizada!</p>
-  </div>
-</section>
+  <section id="beneficios" class="servicios">
+    <div class="container">
+      <h2>¿Por qué elegirnos?</h2>
+      <div class="cards">
+        <div class="card">
+          <img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" alt="Garantía">
+          <h3>Calidad Garantizada</h3>
+          <p>Solo productos confiables y duraderos.</p>
+        </div>
+        <div class="card">
+          <img src="https://cdn-icons-png.flaticon.com/512/726/726476.png" alt="Delivery">
+          <h3>Delivery Disponible</h3>
+          <p>Envíos rápidos a Lima y provincias.</p>
+        </div>
+        <div class="card">
+          <img src="https://cdn-icons-png.flaticon.com/512/4202/4202843.png" alt="Atención">
+          <h3>Atención Personalizada</h3>
+          <p>Te asesoramos para que elijas lo mejor.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<footer class="fondo-azul">
-  <div class="container">
-    <p>&copy; 2025 Ferretería Amor Pañaquito. Todos los derechos reservados.</p>
-  </div>
-</footer>
+  <section id="testimonios" class="testimonios">
+    <div class="container">
+      <h2>Lo que opinan nuestros clientes</h2>
+      <div class="opinion">
+        <p>"La mejor ferretería de la zona. Buen trato y buenos precios."</p>
+        <span>- Don Marcelino, constructor</span>
+      </div>
+      <div class="opinion">
+        <p>"Siempre encuentro lo que necesito para mi chacra. 100% recomendados."</p>
+        <span>- Doña Teresa, agricultora</span>
+      </div>
+    </div>
+  </section>
 
-<script>
-  document.getElementById('menu-toggle').onclick = function () {
-    document.getElementById('nav-list').classList.toggle('active');
-  };
+  <section id="contacto" class="contacto">
+    <div class="container">
+      <h2>Contáctanos</h2>
+      <p><strong>Atencio Ramirez Valentín</strong></p>
+      <p>Tel: <a href="tel:+51937763833">937 763 833</a></p>
+      <p>Dirección: Jr. Principal S/N, Pañaccocha</p>
+      <p>Horario: Lunes a Sábado — 8:00am a 6:00pm</p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.8694266267643!2d-76.9588413!3d-12.0498107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8c7e2d048e5%3A0x1b0aefb304e05e06!2sPañaccocha!5e0!3m2!1ses!2spe!4v1616145858796!5m2!1ses!2spe" width="100%" height="250" style="border:0; border-radius: 10px; margin-top: 20px;" allowfullscreen="" loading="lazy"></iframe>
+      <a class="btn-llamar" href="tel:+51937763833">📞 Llamar Ahora</a>
+    </div>
+  </section>
 
-  document.querySelectorAll('.faq-item').forEach(item => {
-    item.addEventListener('click', () => {
-      item.classList.toggle('open');
-    });
-  });
-</script>
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Pañaquito Pro. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Botón flotante de contacto -->
+  <a href="tel:+51937763833" class="boton-flotante" title="Llamar">
+    📞
+  </a>
 
 </body>
 </html>
