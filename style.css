@@ -1,191 +1,162 @@
-body {
+/* Reset básico */
+* {
   margin: 0;
-  font-family: Arial, sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 header {
-  background-color: #002b4d;
-  color: white;
-  padding: 10px 0;
+  background: #0077cc;
+  color: #fff;
+  padding: 15px 0;
 }
 
 .header-inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1100px;
-  margin: auto;
-  padding: 0 20px;
 }
 
 .logo {
-  font-size: 20px;
+  font-size: 1.8rem;
   font-weight: bold;
 }
 
 nav ul {
-  list-style: none;
   display: flex;
-  gap: 20px;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 20px;
 }
 
 nav ul li a {
-  color: white;
+  color: #fff;
   text-decoration: none;
-  font-weight: bold;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
 }
 
 .hero {
-  background-image: url('https://cdn.www.gob.pe/uploads/document/file/2915471/1%20%284%29.jpg.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 120px 20px;
-  color: white;
+  background: url('https://upload.wikimedia.org/wikipedia/commons/d/d8/Vista_panor%C3%A1mica_de_Tambo_de_Vaca.jpg') no-repeat center center/cover;
+  color: #fff;
   text-align: center;
-  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.4);
+  padding: 100px 20px;
 }
 
 .hero h1 {
-  font-size: 3rem;
-  font-weight: bold;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  font-size: 2.5rem;
 }
 
 .seccion {
-  padding: 50px 20px;
-}
-
-.fondo-azul {
-  background-color: #e3f0ff;
-}
-
-.fondo-claro {
-  background-color: #f9f9f9;
-}
-
-.container {
-  max-width: 1100px;
-  margin: auto;
-}
-
-.productos-lista {
-  columns: 2;
-  padding-left: 20px;
-}
-
-.marca-carousel img {
-  max-width: 100px;
-  margin: 10px;
-}
-
-.faq-item {
-  margin-bottom: 20px;
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 10px;
-}
-
-.question {
-  font-weight: bold;
-  color: #002b4d;
-}
-
-.answer {
-  margin-left: 15px;
-}
-
-#contacto a {
-  color: #007bff;
-  text-decoration: none;
-}
-
-#contacto a:hover {
-  text-decoration: underline;
-}
-
-footer {
-  text-align: center;
-  padding: 20px;
-  color: #333;
-}
-
-/* Título con icono para Nosotros */
-.titulo-con-icono {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+  padding: 60px 0;
 }
 
 .titulo-con-icono img {
   width: 40px;
-  height: auto;
+  vertical-align: middle;
+  margin-right: 10px;
 }
 
-/* Fondo con imagen para Productos */
 .productos-fondo {
-  background-image: url('https://aysa.pe/wp-content/uploads/2022/09/aysa-ferreteria.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  color: white;
+  background: url('https://eos.com/wp-content/uploads/2024/01/agri-machinery-irrigation.png.webp') no-repeat center center/cover;
+  color: #fff;
 }
 
-.productos-contenido-fondo {
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 20px;
-  border-radius: 10px;
-}
-
-.productos-fondo h2,
-.productos-fondo ul {
-  margin: 0;
+.productos-lista {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  list-style: none;
   padding: 0;
 }
 
-/* Fondo para Preguntas Frecuentes */
+.productos-lista li {
+  background: rgba(255, 255, 255, 0.8);
+  color: #333;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.productos-lista li:hover {
+  transform: scale(1.05);
+}
+
+.marca-carousel img {
+  width: 150px;
+  margin: 10px;
+}
+
 .fondo-faq {
-  background-image: url('https://png.pngtree.com/background/20210710/original/pngtree-modern-agriculture-cartoon-peasant-agriculture-development-poster-background-material-picture-image_1005372.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  color: white;
+  background: url('https://www.uv.mx/dcadministrativas/files/2012/10/DOCAG-Anwser-F.png') no-repeat center center/cover;
+  color: #fff;
 }
 
-.faq-contenido-fondo {
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 20px;
-  border-radius: 10px;
+.faq-item {
+  background: rgba(0, 0, 0, 0.6);
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
-.fondo-faq .question {
-  color: #ffd700;
+.faq-item .answer {
+  display: none;
+  margin-top: 5px;
 }
 
-.fondo-faq .answer {
-  color: white;
+.faq-item.open .answer {
+  display: block;
+}
+
+footer {
+  background: #0077cc;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
 }
 
 @media (max-width: 768px) {
-  .header-inner {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
   nav ul {
+    display: none;
     flex-direction: column;
-    gap: 10px;
-    padding-left: 0;
+    background: #0077cc;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    text-align: center;
   }
-
-  .hero h1 {
-    font-size: 2rem;
+  nav ul.active {
+    display: flex;
   }
-
+  .menu-toggle {
+    display: block;
+  }
   .productos-lista {
-    columns: 1;
-  }
-
-  .marca-carousel img {
-    max-width: 80px;
+    grid-template-columns: 1fr;
   }
 }
